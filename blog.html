@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="dracula.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <Head>
+        <title>HaiConMeo-Blog</title>
+        <meta name="description" content="Haiconmeo- Hoàng Hữu Mạnh" />
+        <meta property="og:title" content={{ .Title}} />
+        <meta property="og:image"
+            content={{.Image}} />
+    </Head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hai Con Meo - Blog</h1>
+        <div class="p-5" style="color: aliceblue;">
+            <h2 style="text-align: center;">{{ .Title}}</h2>
+
+            <div class="container pt-5">
+                {{ .Content}}
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
